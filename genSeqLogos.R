@@ -1,4 +1,4 @@
-setwd("~/Documents/MFS/RS_MFS_all/")
+setwd("~/Documents/writing/MFS/MammCell paper/scripts/Ribozyme-SeqFun/")
 library(ggseqlogo)
 
 
@@ -8,7 +8,7 @@ myfiles=lapply(tmp,readLines)
 ggseqlogo(myfiles,seq_type='RNA',ncol=1)
 
 
-tmp=list.files(pattern = "xansubseqs_*")
+tmp=list.files(pattern = "./xansubseqs_*")
 myfiles=lapply(tmp,readLines)
 myfiles
 ggseqlogo(myfiles,seq_type='RNA',ncol=1)
